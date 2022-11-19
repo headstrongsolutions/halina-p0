@@ -1,4 +1,4 @@
-# Displays a random Curiosity photo on a ST7789 screen
+# Displays a random Ingenuity photo on a ST7789 screen
 
 Ok, so first things first, 'what is a "Halina?"'.
 A Halina is a old-timey Colour Slide viewer for 35mm photo slides.
