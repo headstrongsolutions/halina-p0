@@ -33,6 +33,6 @@ if __name__ == "__main__":
     FEED_URL = "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020,ingenuity&feedtype=json&ver=1.2&num=100&page=0&&order=sol+desc&&search=|FRONT_HAZCAM_LEFT_A|FRONT_HAZCAM_LEFT_B|NAVCAM_LEFT|FRONT_HAZCAM_RIGHT_A|FRONT_HAZCAM_RIGHT_B&&&condition_2=2022-09-09T11:06:54.000Z:date_received:gte&condition_3=553,552,526,513:sol:in&"
     ingenuityImage = IngenuityImage(FEED_URL)
     url = ingenuityImage.get_image_url()
-    print(url)
+    # print(url)
 
 

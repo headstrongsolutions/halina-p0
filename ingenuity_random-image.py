@@ -13,15 +13,6 @@ import ST7789 as ST7789
 from ingenuity_image import IngenuityImage 
 
 
-print("""
-image.py - Display an random photo from the Mars Ingenuity Rover on the LCD.
-
-If you're using Breakout Garden, plug the 1.3" LCD (SPI)
-breakout into the front slot.
-
-""")
-
-
 if len(sys.argv) < 2:
     print("""Usage: {} <display_type>
 
@@ -85,7 +76,7 @@ def set_image():
 
 
     # Load an image.
-    print(f'Getting image: {image_url}...')
+    # print(f'Getting image: {image_url}...')
 
     response = requests.get(image_url)
     image = Image.open(BytesIO(response.content))
@@ -94,7 +85,7 @@ def set_image():
     image = image.resize((WIDTH, HEIGHT))
 
     # Draw the image on the display hardware.
-    print('Drawing image')
+    # print('Drawing image')
 
     disp.display(image)
 
